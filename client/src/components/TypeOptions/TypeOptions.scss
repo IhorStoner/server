@@ -1,0 +1,13 @@
+.dropdownContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__label {
+    margin: 0;
+  }
+
+  &__options {
+    max-width: 180px;
+  }
+}

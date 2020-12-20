@@ -1,0 +1,61 @@
+.ad {
+  &__contacts {
+    width: 307px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__btnContainer {
+    margin-bottom: 10px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--gold {
+      background-color: #ECE218;
+    }
+    &--silver {
+      background-color: silver;
+    }
+    &--blue {
+      background-color: #B4C6E7;
+    }
+    &--green {
+      background-color:#C6E0B4;
+    }
+    &--gray {
+      background-color: #D9D9D9;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    background-color: #FF9900;
+    width: 100%;
+    padding: 10px;
+  }
+}

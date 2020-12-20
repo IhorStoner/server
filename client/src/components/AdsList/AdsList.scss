@@ -1,0 +1,26 @@
+.adsList {
+  width: 100%;
+
+  &__item {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.gold {
+  background-color: gold;
+}
+
+.silver {
+  background-color: silver;
+}
