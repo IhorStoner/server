@@ -39,7 +39,7 @@ const validate = values => {
   if(!values.email){
     errors.email = 'Required'
   }
-
+  // eslint-disable-next-line
   const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   if (!re.test(values.email)) {
     errors.email = 'Wrong email format!'

@@ -92,7 +92,6 @@ export default function NewAdPage() {
       services: serviceArr,
       img: imgId,
     })
-    console.log(result)
   }, [section,selectedSubsection,type,selectedRegion,city,price,title,description,name,phone,mail,status,serviceArr,productPrice,imgId])
 
   const onChangeGold = () => {
@@ -144,7 +143,8 @@ export default function NewAdPage() {
     const formData = new FormData()
     formData.append('image', images[0])
     const result = await axios.post('http://localhost:5000/api/images',formData)
-      .then(res => setImgId([...imgId, res.data[0]._id]))
+      .then(res => console.log(res))
+      // .then(res => setImgId([...imgId, res.data[0]._id]))
     const sendData = await axios.post('http://localhost:5000/api/ads',values)
     console.log(values)
     // history.push('/home')
